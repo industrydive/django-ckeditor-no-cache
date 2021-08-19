@@ -4,7 +4,7 @@ include CHANGELOG.rst
 include README.rst
 recursive-include ckeditor/static *
 recursive-include ckeditor/static *.asp *.php
-recursive-exclude ckeditor/static/ckeditor/ckeditor/_samples *
+recursive-exclude ckeditor/static/ckeditor_busted/ckeditor/_samples *
 recursive-include ckeditor/templates *
 recursive-include ckeditor_uploader/static *
 recursive-include ckeditor_uploader/templates *

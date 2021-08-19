@@ -24,7 +24,7 @@ long_description = "\n".join([
 
 
 def get_source_files():
-    for dirname, _, files in os.walk('ckeditor/static/ckeditor/ckeditor/_source'):
+    for dirname, _, files in os.walk('ckeditor/static/ckeditor_busted/ckeditor/_source'):
         for filename in files:
             yield os.path.join('/'.join(dirname.split('/')[1:]), filename)
 

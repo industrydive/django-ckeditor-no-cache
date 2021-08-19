@@ -55,15 +55,15 @@ class CKEditorWidget(forms.Textarea):
 
     class Media:
         js = (
-            JS('ckeditor/ckeditor-init.js', {
+            JS('ckeditor_busted/ckeditor-init.js', {
                 'id': 'ckeditor-init-script',
                 'data-ckeditor-basepath': getattr(
                     settings,
                     'CKEDITOR_BASEPATH',
-                    static('ckeditor/ckeditor/'),
+                    static('ckeditor_busted/ckeditor/'),
                 ),
             }),
-            'ckeditor/ckeditor/ckeditor.js',
+            'ckeditor_busted/ckeditor/ckeditor.js',
         )
 
     def __init__(self, config_name='default', extra_plugins=None, external_plugin_resources=None, *args, **kwargs):
